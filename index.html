@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexões</title>
+    <meta name="description" content="Um espaço para reflexões curtas e pensamentos do dia a dia.">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <!-- dom-to-image for image generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script>
+</head>
+
+<body class="page">
+    <div class="page__background"></div>
+    <div class="page__container">
+
+        <header class="hero">
+            <h1 class="hero__title">Murilo Frizanco</h1>
+            <p class="hero__subtitle">Fragmentos de pensamento, ideias e observações.</p>
+        </header>
+
+        <section class="controls">
+            <div class="search">
+                <input type="text" id="searchInput" class="search__input" placeholder="Pesquisar nas reflexões...">
+                <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <nav class="filter" id="categoryFilter">
+                <button class="filter__button filter__button--active" data-category="all">Todas</button>
+                
+        <button class="filter__button" data-category="Psicologia">Psicologia</button>
+    
+        <button class="filter__button" data-category="Reflexão">Reflexão</button>
+    
+        <button class="filter__button" data-category="Finanças">Finanças</button>
+    
+        <button class="filter__button" data-category="Felicidade">Felicidade</button>
+    
+        <button class="filter__button" data-category="Religião">Religião</button>
+    
+        <button class="filter__button" data-category="Maturidade">Maturidade</button>
+    
+        <button class="filter__button" data-category="Política">Política</button>
+    
+        <button class="filter__button" data-category="Filosofia">Filosofia</button>
+    
+        <button class="filter__button" data-category="Economia">Economia</button>
+    
+        <button class="filter__button" data-category="Sociedade">Sociedade</button>
+    
+        <button class="filter__button" data-category="Morte">Morte</button>
+    
+        <button class="filter__button" data-category="Educação">Educação</button>
+    
+        <button class="filter__button" data-category="IA">IA</button>
+    
+        <button class="filter__button" data-category="Carreira">Carreira</button>
+    
+        <button class="filter__button" data-category="Trabalho">Trabalho</button>
+    
+        <button class="filter__button" data-category="Tecnologia">Tecnologia</button>
+    
+        <button class="filter__button" data-category="Valores">Valores</button>
+    
+        <button class="filter__button" data-category="Humanismo">Humanismo</button>
+    
+            </nav>
+        </section>
+
+        <main class="feed" id="postsFeed">
+            
+        <article class="feed__item" id="post-capture-tipos-de-sofrimento" data-categories="Psicologia,Reflexão" data-title="dois tipos de sofrimento" data-raw-title="Dois Tipos de Sofrimento">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">1 de fevereiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Existem dois tipos de pessoas que sofrem muito:</p>
+<ol>
+<li><p>As que são apegadas demais a própria vontade e entram em crise quando a vida impõe outra coisa.</p>
+</li>
+<li><p>As que não tem vontade própria por passarem a vida em uma monotonia entediante e desinteressa pela realidade a sua volta.</p>
+</li>
+</ol>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-tipos-de-sofrimento')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/tipos-de-sofrimento.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-felicidade-e-financas" data-categories="Finanças,Felicidade" data-title="felicidade vs finanças" data-raw-title="Felicidade vs Finanças">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Sou grande defensor de todos alcançarem um patamar financeiramente confortável e correspondente as suas necessidades. Mas colocar o coração nisso é frustrar a própria felicidade.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-felicidade-e-financas')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/felicidade-e-financas.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-buscar-a-cristo" data-categories="Religião,Maturidade" data-title="a busca por cristo" data-raw-title="A Busca por Cristo">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>O homem que não busca a Cristo é mais nocivo a si mesmo do que o mundo inteiro e todos os seus inimigos juntos.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-buscar-a-cristo')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/buscar-a-cristo.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-alem-de-direita-e-esquerda" data-categories="Política,Filosofia" data-title="além de direita e esquerda" data-raw-title="Além de Direita e Esquerda">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Me lembro quando me perguntaram se eu era de direita ou esquerda. Nem um, e nem outro. Meu lado é a verdade e a virtude que pode aparecer nos mais diversos lugares e ambientes. Classificar em direita e esquerda é um reducionismo que limita a percepção da realidade em si.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-alem-de-direita-e-esquerda')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/alem-de-direita-e-esquerda.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-lucro-e-pais" data-categories="Economia,Reflexão,Sociedade" data-title="a avareza e o lucro" data-raw-title="A Avareza e o Lucro">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Tenho visto uma lógica moralmente perigosa onde pessoas decidem a qualidade de um país por quanto de lucro elas conseguem manter para si. A vida do ser humano é muito mais que dinheiro, mas a avareza domina os corações de muitos.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-lucro-e-pais')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/lucro-e-pais.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-lembranca-da-morte" data-categories="Religião,Reflexão,Morte" data-title="remédio para a cobiça" data-raw-title="Remédio para a Cobiça">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>A lembrança da morte é um dos maiores remédios para a cobiça do dinheiro, pois nos lembra que tudo o que acumularmos vai ficar para trás. Já dizia Jesus de um acumulador de riquezas: louco!</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-lembranca-da-morte')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/lembranca-da-morte.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-cursos-academicos" data-categories="Educação,IA,Carreira" data-title="cursos acadêmicos vs mercado" data-raw-title="Cursos Acadêmicos vs Mercado">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Um curso acadêmico levar 4 anos para ser concluído é pedir pra ser trocado por IA e robôs em 2026. Os jovens que forem inteligentes vão seguir mais o mercado do que a convenção social que rege atualmente. Faça faculdade pra ter o papel, mas não pra se capacitar. Já foi isso.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-cursos-academicos')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/cursos-academicos.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-ia-e-utilidade" data-categories="IA,Trabalho" data-title="a utilidade da ia" data-raw-title="A Utilidade da IA">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>A IA só tem utilidade para quem sabe ser útil. Quem não sabe ser útil ao outro não consegue nem imaginar como usar a IA pra se beneficiar dela. Aprenda a servir (voluntariamente ou num trabalho) e você vai estar preparando o terreno para os próximos anos.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-ia-e-utilidade')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/ia-e-utilidade.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-filosofia-e-tecnologia" data-categories="Filosofia,Tecnologia" data-title="as duas áreas fundamentais" data-raw-title="As Duas Áreas Fundamentais">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Nos tempos de hoje nunca foi tão fundamental conhecer duas áreas: filosofia e tecnologia. Tecnologia para dominar o mundo externo segundo a estrutura que está se montando e a filosofia para dominar a si mesmo e saber responder: quem eu sou e qual meu papel no mundo.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-filosofia-e-tecnologia')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/filosofia-e-tecnologia.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-estudar-filosofia" data-categories="Filosofia,Maturidade,IA" data-title="o que é estudar filosofia" data-raw-title="O Que é Estudar Filosofia">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Estudar filosofia não é saber história dela, mas formar uma visão sólida e consistente sobre virtudes, felicidade e amizades. Em suma, é capacitar-se para a busca da sabedoria e da verdade em um mundo guiado por uma IA que jamais vai poder dizer quem somos.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-estudar-filosofia')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/estudar-filosofia.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-politicos-honestos" data-categories="Sociedade,Política" data-title="sinais de amadurecimento na sociedade" data-raw-title="Sinais de Amadurecimento na Sociedade">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Na minha infância as crianças queriam conhecer de perto jogador de futebol. Hoje em dia muitas querem conhecer políticos honestos. Isso é um excelente sinal de amadurecimento da sociedade onde damos maior importância àqueles que afetam nossa vida diretamente.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-politicos-honestos')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/politicos-honestos.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-ia-e-educacao" data-categories="IA,Educação" data-title="ia e o sentido da educação" data-raw-title="IA e o Sentido da Educação">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">25 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Eu fico espantado do que as pessoas da educação estão vivendo em um mundo a parte da IA. A faculdade já perdia sentia a alguns anos (não formava nada muito útil pro mercado de trabalho) e agora perdeu o sentido estrutural.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-ia-e-educacao')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/ia-e-educacao.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-agregar-valor" data-categories="Valores,Trabalho,Maturidade" data-title="agregar valor antes do prêmio" data-raw-title="Agregar Valor Antes do Prêmio">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">19 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>Existem pessoas que querem ganhar o prêmio antes de agregar valor, porém, pessoas maduras agregam valor antes do prêmio. O motivo é simples: elas estão mais concentradas em servir do que ganhar e isso sofere uma pessoa de sexta camada para uma de sétima.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-agregar-valor')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/agregar-valor.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-trabalho-por-proposito" data-categories="IA,Trabalho,Humanismo" data-title="trabalho por motivos nobres" data-raw-title="Trabalho por Motivos Nobres">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">19 de janeiro de 2026</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>A IA está iniciando uma época onde trabalhar por dinheiro não vai fazer tanto sentido e que quem mais vai conseguir trabalho é quem trabalha por motivos mais nobres humanos do que meramente indicadores econômicos. Por isso, busquem formar seu lado humano.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-trabalho-por-proposito')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/trabalho-por-proposito.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        <article class="feed__item" id="post-capture-religiao-do-ego" data-categories="Religião,Reflexão" data-title="a religião do próprio ego" data-raw-title="A Religião do Próprio Ego">
+            <div class="feed__item-avatar">
+                <div class="avatar-circle"></div>
+            </div>
+            <div class="feed__item-content">
+                <header class="feed__item-header">
+                    <div class="feed__item-meta">
+                        <span class="user-name">Murilo Frizanco</span>
+                        <span class="author-tag">@murilofrizanco</span>
+                        <span class="dot-separator">·</span>
+                        <time class="feed__item-date">26 de abril de 2025</time>
+                    </div>
+                </header>
+                <div class="feed__item-body">
+                    <p>As pessoas tem trilhado sem perceber um caminho de usar o nome de Jesus quando na verdade não seguem o que ele ensina é propõe, mas pervertem o nome de Jesus para uma religião do próprio ego travestida com o nome de Cristo onde o foco da religião é o próprio interesse.</p>
+
+                </div>
+                <footer class="feed__item-footer">
+                    <div class="feed-actions">
+                        <button class="compact-action-btn" onclick="copyFeedPostText(this)" title="Copiar Texto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                        <button class="compact-action-btn" onclick="copyImageToClipboard('post-capture-religiao-do-ego')" title="Compartilhar Imagem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                    <a href="posts/religiao-do-ego.html" class="read-more-link">Visualizar post completo</a>
+                </footer>
+            </div>
+        </article>
+    
+        </main>
+
+        <nav class="pagination" id="paginationControls" style="display: none;">
+            <button class="pagination__btn" id="prevPage" disabled>&larr; Recentes</button>
+            <span class="pagination__info" id="pageInfo">Página 1</span>
+            <button class="pagination__btn" id="nextPage">Antigas &rarr;</button>
+        </nav>
+
+        <footer class="footer">
+            <p class="footer__text">©
+                <script>document.write(new Date().getFullYear())</script> Reflexões de @murilofrizanco.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Inject static data to avoid CORS on file:/// -->
+    <script id="injected-posts-data" type="application/json">
+        [{"title":"Dois Tipos de Sofrimento","date":"2026-02-01T09:00:00.000Z","formattedDate":"1 de fevereiro de 2026","categories":["Psicologia","Reflexão"],"slug":"tipos-de-sofrimento","excerpt":"Existem dois tipos de pessoas que sofrem muito:\n\n1. As que são apegadas demais a própria vontade e entram em crise quando a vida impõe outra coisa.\n\n2...","content":"<p>Existem dois tipos de pessoas que sofrem muito:</p>\n<ol>\n<li><p>As que são apegadas demais a própria vontade e entram em crise quando a vida impõe outra coisa.</p>\n</li>\n<li><p>As que não tem vontade própria por passarem a vida em uma monotonia entediante e desinteressa pela realidade a sua volta.</p>\n</li>\n</ol>\n"},{"title":"Felicidade vs Finanças","date":"2026-01-25T20:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Finanças","Felicidade"],"slug":"felicidade-e-financas","excerpt":"Sou grande defensor de todos alcançarem um patamar financeiramente confortável e correspondente as suas necessidades. Mas colocar o coração nisso é fr...","content":"<p>Sou grande defensor de todos alcançarem um patamar financeiramente confortável e correspondente as suas necessidades. Mas colocar o coração nisso é frustrar a própria felicidade.</p>\n"},{"title":"A Busca por Cristo","date":"2026-01-25T19:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Religião","Maturidade"],"slug":"buscar-a-cristo","excerpt":"O homem que não busca a Cristo é mais nocivo a si mesmo do que o mundo inteiro e todos os seus inimigos juntos.\n...","content":"<p>O homem que não busca a Cristo é mais nocivo a si mesmo do que o mundo inteiro e todos os seus inimigos juntos.</p>\n"},{"title":"Além de Direita e Esquerda","date":"2026-01-25T18:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Política","Filosofia"],"slug":"alem-de-direita-e-esquerda","excerpt":"Me lembro quando me perguntaram se eu era de direita ou esquerda. Nem um, e nem outro. Meu lado é a verdade e a virtude que pode aparecer nos mais div...","content":"<p>Me lembro quando me perguntaram se eu era de direita ou esquerda. Nem um, e nem outro. Meu lado é a verdade e a virtude que pode aparecer nos mais diversos lugares e ambientes. Classificar em direita e esquerda é um reducionismo que limita a percepção da realidade em si.</p>\n"},{"title":"A Avareza e o Lucro","date":"2026-01-25T17:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Economia","Reflexão","Sociedade"],"slug":"lucro-e-pais","excerpt":"Tenho visto uma lógica moralmente perigosa onde pessoas decidem a qualidade de um país por quanto de lucro elas conseguem manter para si. A vida do se...","content":"<p>Tenho visto uma lógica moralmente perigosa onde pessoas decidem a qualidade de um país por quanto de lucro elas conseguem manter para si. A vida do ser humano é muito mais que dinheiro, mas a avareza domina os corações de muitos.</p>\n"},{"title":"Remédio para a Cobiça","date":"2026-01-25T16:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Religião","Reflexão","Morte"],"slug":"lembranca-da-morte","excerpt":"A lembrança da morte é um dos maiores remédios para a cobiça do dinheiro, pois nos lembra que tudo o que acumularmos vai ficar para trás. Já dizia Jes...","content":"<p>A lembrança da morte é um dos maiores remédios para a cobiça do dinheiro, pois nos lembra que tudo o que acumularmos vai ficar para trás. Já dizia Jesus de um acumulador de riquezas: louco!</p>\n"},{"title":"Cursos Acadêmicos vs Mercado","date":"2026-01-25T15:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Educação","IA","Carreira"],"slug":"cursos-academicos","excerpt":"Um curso acadêmico levar 4 anos para ser concluído é pedir pra ser trocado por IA e robôs em 2026. Os jovens que forem inteligentes vão seguir mais o ...","content":"<p>Um curso acadêmico levar 4 anos para ser concluído é pedir pra ser trocado por IA e robôs em 2026. Os jovens que forem inteligentes vão seguir mais o mercado do que a convenção social que rege atualmente. Faça faculdade pra ter o papel, mas não pra se capacitar. Já foi isso.</p>\n"},{"title":"A Utilidade da IA","date":"2026-01-25T14:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["IA","Trabalho"],"slug":"ia-e-utilidade","excerpt":"A IA só tem utilidade para quem sabe ser útil. Quem não sabe ser útil ao outro não consegue nem imaginar como usar a IA pra se beneficiar dela. Aprend...","content":"<p>A IA só tem utilidade para quem sabe ser útil. Quem não sabe ser útil ao outro não consegue nem imaginar como usar a IA pra se beneficiar dela. Aprenda a servir (voluntariamente ou num trabalho) e você vai estar preparando o terreno para os próximos anos.</p>\n"},{"title":"As Duas Áreas Fundamentais","date":"2026-01-25T13:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Filosofia","Tecnologia"],"slug":"filosofia-e-tecnologia","excerpt":"Nos tempos de hoje nunca foi tão fundamental conhecer duas áreas: filosofia e tecnologia. Tecnologia para dominar o mundo externo segundo a estrutura ...","content":"<p>Nos tempos de hoje nunca foi tão fundamental conhecer duas áreas: filosofia e tecnologia. Tecnologia para dominar o mundo externo segundo a estrutura que está se montando e a filosofia para dominar a si mesmo e saber responder: quem eu sou e qual meu papel no mundo.</p>\n"},{"title":"O Que é Estudar Filosofia","date":"2026-01-25T12:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Filosofia","Maturidade","IA"],"slug":"estudar-filosofia","excerpt":"Estudar filosofia não é saber história dela, mas formar uma visão sólida e consistente sobre virtudes, felicidade e amizades. Em suma, é capacitar-se ...","content":"<p>Estudar filosofia não é saber história dela, mas formar uma visão sólida e consistente sobre virtudes, felicidade e amizades. Em suma, é capacitar-se para a busca da sabedoria e da verdade em um mundo guiado por uma IA que jamais vai poder dizer quem somos.</p>\n"},{"title":"Sinais de Amadurecimento na Sociedade","date":"2026-01-25T11:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["Sociedade","Política"],"slug":"politicos-honestos","excerpt":"Na minha infância as crianças queriam conhecer de perto jogador de futebol. Hoje em dia muitas querem conhecer políticos honestos. Isso é um excelente...","content":"<p>Na minha infância as crianças queriam conhecer de perto jogador de futebol. Hoje em dia muitas querem conhecer políticos honestos. Isso é um excelente sinal de amadurecimento da sociedade onde damos maior importância àqueles que afetam nossa vida diretamente.</p>\n"},{"title":"IA e o Sentido da Educação","date":"2026-01-25T10:00:00.000Z","formattedDate":"25 de janeiro de 2026","categories":["IA","Educação"],"slug":"ia-e-educacao","excerpt":"Eu fico espantado do que as pessoas da educação estão vivendo em um mundo a parte da IA. A faculdade já perdia sentia a alguns anos (não formava nada ...","content":"<p>Eu fico espantado do que as pessoas da educação estão vivendo em um mundo a parte da IA. A faculdade já perdia sentia a alguns anos (não formava nada muito útil pro mercado de trabalho) e agora perdeu o sentido estrutural.</p>\n"},{"title":"Agregar Valor Antes do Prêmio","date":"2026-01-19T10:00:00.000Z","formattedDate":"19 de janeiro de 2026","categories":["Valores","Trabalho","Maturidade"],"slug":"agregar-valor","excerpt":"Existem pessoas que querem ganhar o prêmio antes de agregar valor, porém, pessoas maduras agregam valor antes do prêmio. O motivo é simples: elas estã...","content":"<p>Existem pessoas que querem ganhar o prêmio antes de agregar valor, porém, pessoas maduras agregam valor antes do prêmio. O motivo é simples: elas estão mais concentradas em servir do que ganhar e isso sofere uma pessoa de sexta camada para uma de sétima.</p>\n"},{"title":"Trabalho por Motivos Nobres","date":"2026-01-19T09:00:00.000Z","formattedDate":"19 de janeiro de 2026","categories":["IA","Trabalho","Humanismo"],"slug":"trabalho-por-proposito","excerpt":"A IA está iniciando uma época onde trabalhar por dinheiro não vai fazer tanto sentido e que quem mais vai conseguir trabalho é quem trabalha por motiv...","content":"<p>A IA está iniciando uma época onde trabalhar por dinheiro não vai fazer tanto sentido e que quem mais vai conseguir trabalho é quem trabalha por motivos mais nobres humanos do que meramente indicadores econômicos. Por isso, busquem formar seu lado humano.</p>\n"},{"title":"A Religião do Próprio Ego","date":"2025-04-26T12:00:00.000Z","formattedDate":"26 de abril de 2025","categories":["Religião","Reflexão"],"slug":"religiao-do-ego","excerpt":"As pessoas tem trilhado sem perceber um caminho de usar o nome de Jesus quando na verdade não seguem o que ele ensina é propõe, mas pervertem o nome d...","content":"<p>As pessoas tem trilhado sem perceber um caminho de usar o nome de Jesus quando na verdade não seguem o que ele ensina é propõe, mas pervertem o nome de Jesus para uma religião do próprio ego travestida com o nome de Cristo onde o foco da religião é o próprio interesse.</p>\n"}]
+    </script>
+    <script>
+        try {
+            const dataEl = document.getElementById('injected-posts-data');
+            window.POSTS_DATA = JSON.parse(dataEl.textContent);
+        } catch (e) {
+            window.POSTS_DATA = [];
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

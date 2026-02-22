@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${post.title}</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- dom-to-image for image generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script>
+</head>
+<body class="page">
+    <div class="page__background"></div>
+    <header class="header">
+        <a href="../index.html" class="header__back">&larr; Voltar para as reflexões</a>
+    </header>
+    <main class="post-detail">
+        <article class="post-detail__article" id="post-capture-area">
+            <div class="post-user-info">
+                <div class="avatar-circle"></div>
+                <div class="user-names">
+                    <span class="user-name">Murilo Frizanco</span>
+                    <span class="author-tag">@murilofrizanco</span>
+                </div>
+            </div>
+            
+            <!-- Remove title block if you want it pure Twitter style or keep it as heading -->
+            <!-- <h1 class="post-detail__title">O Que é Estudar Filosofia</h1> -->
+            
+            <div class="post-detail__content" id="post-content-body">
+                <p>Estudar filosofia não é saber história dela, mas formar uma visão sólida e consistente sobre virtudes, felicidade e amizades. Em suma, é capacitar-se para a busca da sabedoria e da verdade em um mundo guiado por uma IA que jamais vai poder dizer quem somos.</p>
+
+            </div>
+            
+            <div class="post-detail__meta">
+                <time class="post-detail__date">25 de janeiro de 2026</time>
+            </div>
+            
+            <div class="post-detail__categories">
+                <span class="post-detail__tag">Filosofia</span><span class="post-detail__tag">Maturidade</span><span class="post-detail__tag">IA</span>
+            </div>
+        </article>
+        
+        <div class="post-actions">
+            <button class="action-btn" onclick="copyDetailPostText()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copiar Texto
+            </button>
+            <button class="action-btn" onclick="copyImageToClipboard('post-capture-area')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Copiar Imagem
+            </button>
+        </div>
+    </main>
+    
+    <script src="../app.js"></script>
+</body>
+</html>
